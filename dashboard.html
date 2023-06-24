@@ -55,41 +55,81 @@
             class="offcanvas offcanvas-end offcanvas-attached"></div>
 
         <!-- Your Page Content Goes Here-->
-        <!-- Carousel -->
-        <div class="page-content header-clear-large">
 
+
+        <div class="page-content header-clear-large">
+            <!-- bagian warning user -->
+            <div class="content">
+                <h6 class="font-700 pb-2 opacity-50">Jika ada notifikasi warning ke akun</h6>
+                <div class="alert border-blue-dark alert-dismissible color-blue-dark rounded-s fade show" role="alert">
+                    <strong>Attention</strong> - Border Single Alert
+                    <button type="button" class="btn-close opacity-20 font-11 pt-3 mt-1" data-bs-dismiss="alert"
+                        aria-label="Close"></button>
+                </div>
+                <div class="alert bg-fade2-yellow color-theme border border-yellow-dark alert-dismissible rounded-s fade show"
+                    role="alert">
+                    <strong>Warning</strong><span class="opacity-60"> - Border Single Alert</span>
+                    <button type="button" class="btn-close opacity-20 font-11 pt-3 mt-1" data-bs-dismiss="alert"
+                        aria-label="Close"></button>
+                </div>
+                <div class="alert bg-fade-red color-red-dark alert-dismissible rounded-s fade show" role="alert">
+                    <i class="bi bi-exclamation-triangle pe-2"></i>
+                    <strong>Warning</strong> - Faded Single Alert
+                    <button type="button" class="btn-close opacity-20 font-11 pt-3 mt-1" data-bs-dismiss="alert"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <!-- end warning user -->
+            <!-- menu navigasi dashboard -->
+            <div class="content row">
+                <div class="col text-center"><a href=""
+                        class="btn btn-full btn-s btn-light border shadow-0 color-highlight rounded-l"><i
+                            class="bi bi-bag-check font-25"></i></a>
+                    <span class="color-highlight font-12 font-400">penjualan</span>
+                </div>
+                <div class="col text-center"><a href=""
+                        class="btn btn-full btn-s btn-light border shadow-0 color-highlight rounded-l"><i
+                            class="bi bi-box2 font-25"></i></a>
+                    <span class="color-highlight font-12 font-400">Produk</span>
+                </div>
+                <div class="col text-center"><a href=""
+                        class="btn btn-full btn-s btn-light border shadow-0 color-highlight rounded-l"><i
+                            class="bi bi-clipboard2-check font-25"></i></a>
+                    <span class="color-highlight font-12 font-400">Pesanan</span>
+                </div>
+                <div class="col text-center"><a href=""
+                        class="btn btn-full btn-s btn-light border shadow-0 color-highlight rounded-l"><i
+                            class="bi bi-truck font-25"></i></a>
+                    <span class="color-highlight font-12 font-400">Pengiriman</span>
+                </div>
+            </div>
+            <!-- end navigasi dashboard -->
+
+            <!-- Carousel -->
             <!-- Single Sliders-->
-            <h6 class="font-700 opacity-60 content mb-2">Single Visible Slider - Sides are Visible</h6>
-            <div class="splide single-slider slider-dots-under slider-no-dots slider-no-arrows slider-visible-center"
-                id="single-slider-2">
+            <div class="divider mx-3 my-3"></div>
+            <h6 class="font-700 opacity-60 content mb-2">Promo Menarik untuk Kamu</h6>
+            <div class="splide single-slider slider-dots-under slider-no-dots slider-no-arrows slider-visible"
+                id="single-slider-3">
                 <div class="splide__track">
                     <div class="splide__list">
                         <div class="splide__slide">
-                            <div data-card-height="230" class="card rounded-m shadow-s border-0">
-                                <div class="card-bottom text-center p-0">
-                                    <img src="images/pictures/1.png" alt="" height="230" class="rounded-m">
-                                </div>
+                            <div data-card-height="150" class="card bg-1 rounded-m shadow-l border-0">
                             </div>
                         </div>
                         <div class="splide__slide">
-                            <div data-card-height="200" class="card bg-23 rounded-m shadow-l">
-                                <div class="card-bottom m-3">
-                                    <h2 class="color-white text-uppercase font-900 mb-0">Left Aligned</h2>
-                                    <p class="under-heading color-white opacity-60 mb-0">Wherever you need them.</p>
-                                </div>
+                            <div data-card-height="150" class="card bg-1 rounded-m shadow-l border-0">
                             </div>
                         </div>
                         <div class="splide__slide">
-                            <div data-card-height="200" class="card bg-3 rounded-m shadow-l">
-                                <div class="card-bottom text-end m-3">
-                                    <h2 class="color-white text-uppercase font-900 mb-0">Right Aligned</h2>
-                                    <p class="under-heading color-white opacity-60 mb-0">Wherever you need them.</p>
-                                </div>
+                            <div data-card-height="150" class="card bg-1 rounded-m shadow-l border-0">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- end carousel -->
+
 
         </div>
     </div>
