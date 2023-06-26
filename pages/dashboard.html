@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+    <title>Duo Mobile PWA Kit</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/bootstrap.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="manifest" href="../../_manifest.json" />
+    <meta id="theme-check" name="theme-color" content="#FFFFFF" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../app/icons/icon-192x192.png"
+    />
+  </head>
+
+  <body class="theme-light">
+    <div id="preloader">
+      <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+
+    <div id="page">
+      <!-- Header -->
+      <iframe src="header-bar.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+      <!-- Footer Bar -->
+      <iframe src="footer-bar.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+
+      <!-- Main Sidebar-->
+      <div
+        id="menu-main"
+        data-menu-active="nav-comps"
+        data-menu-load="menu-main.html"
+        style="width: 280px"
+        class="offcanvas offcanvas-end offcanvas-attached"
+      ></div>
+
+      <!-- Your Page Content Goes Here-->
+      <div class="page-content header-clear-large">
+
+        <div class="card card-style mb-3">
+            <div class="row mt-3">
+                <div class="col-4 text-center">
+                    <h4 class="font-20">513</h4>
+                    <p class="font-12 mb-n1">Skor</p>
+                </div>
+                <div class="col-4 text-center">
+                    <h4 class="font-20">63</h4>
+                    <p class="font-12 mb-n1">Stok Produk</p>
+                </div>
+                <div class="col-4 text-center">
+                    <h4 class="font-20">3</h4>
+                    <p class="font-12 mb-n1">Transaksi</p>
+                </div>
+            </div>
+
+            <div class="divider my-2"></div>
+            <div class="content m-2 row">
+                <div class="col-6 px-0"><a href="" class="btn btn-full gradient-blue rounded-l me-1">Jual Produk</a>
+                </div>
+                <div class="col-6 px-0"><a href="" class="btn btn-full gradient-dark rounded-l ms-1">Restock</a>
+                </div>
+            </div>
+        </div>
+        <!-- menu navigasi dashboard -->
+        <div class="content row">
+            <div class="col text-center"><a href=""
+                    class="btn btn-full btn-s btn-light shadow-m color-highlight rounded-l"><i
+                        class="bi bi-bag-check font-25"></i></a>
+                <span class="color-highlight font-12 font-400">penjualan</span>
+            </div>
+            <div class="col text-center"><a href=""
+                    class="btn btn-full btn-s btn-light shadow-m color-highlight rounded-l"><i
+                        class="bi bi-box2 font-25"></i></a>
+                <span class="color-highlight font-12 font-400">Produk</span>
+            </div>
+            <div class="col text-center"><a href=""
+                    class="btn btn-full btn-s btn-light shadow-m color-highlight rounded-l"><i
+                        class="bi bi-clipboard2-check font-25"></i></a>
+                <span class="color-highlight font-12 font-400">Pesanan</span>
+            </div>
+            <div class="col text-center"><a href=""
+                    class="btn btn-full btn-s btn-light shadow-m color-highlight rounded-l"><i
+                        class="bi bi-truck font-25"></i></a>
+                <span class="color-highlight font-12 font-400">Pengiriman</span>
+            </div>
+        </div>
+        <!-- end navigasi dashboard -->
+
+
+        <!-- Carousel -->
+        <!-- Single Sliders-->
+        <div class="divider mx-3 mb-3"></div>
+        <div class="splide single-slider slider-dots-under slider-no-dots slider-no-arrows slider-visible my-3"
+            id="single-slider-3">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div data-card-height="150" class="card bg-1 rounded-m shadow-l border-0">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div data-card-height="150" class="card bg-1 rounded-m shadow-l border-0">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div data-card-height="150" class="card bg-1 rounded-m shadow-l border-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end carousel -->
+
+
+        <div class="card card-style">
+            <div class="content m-0">
+                <div class="d-flex px-3">
+                    <div>
+                        <h5 class="pb-1 pt-3 font-12 font-12">Transaksi Terakhir
+                        </h5>
+                    </div>
+                    <div class="ms-auto">
+                        <h5 class="ps-3 pb-1 pt-3 font-13 color-highlight">Lihat Semua</h5>
+                    </div>
+                </div>
+                <div class="divider mb-0 mt-2"></div>
+                <div class="list-group list-custom list-group-m rounded-l">
+
+                    <!-- Riwayat Transaksi -->
+                    <!-- Penjualan -->
+                    <a href="#" class="list-group-item border-top-0 border-start-0 border-end-0">
+                        <i class="mx-1 text-success bi bi-box-arrow-in-up font-25"></i>
+                        <div class="ps-1">
+                            <strong class="font-600">Keripik Sipisang Rasa Cokla...</strong>
+                            <span class="opacity-90">12 Jun 2023 - 14:30</span>
+                        </div>
+                        <p
+                            class="font-15 font-500 color-theme text-end ms-auto line-height-xl align-self-start pt-2">
+                            Rp250.000
+                            <span class="font-400 text-success opacity-90">Penjualan</span>
+                        </p>
+                    </a>
+                    <!-- Restock -->
+                    <a href="#" class="list-group-item border-top-0 border-start-0 border-end-0">
+                        <i class="mx-1 text-primary bi bi-box-arrow-in-down font-25"></i>
+                        <div class="ps-1">
+                            <strong class="font-600">Keripik Sipisang Rasa Jagu...</strong>
+                            <span class="opacity-90">12 Jun 2023 - 14:30</span>
+                        </div>
+                        <p
+                            class="font-15 font-500 color-theme text-end ms-auto line-height-xl align-self-start pt-2">
+                            Rp20.000
+                            <span class="font-400 text-primary opacity-90">Restock</span>
+                        </p>
+                    </a>
+                    </a>
+                    <!-- COD -->
+                    <a href="#" class="list-group-item border-top-0 border-start-0 border-end-0">
+                        <i class="mx-1 text-primary bi bi-bag-check font-25"></i>
+                        <div class="ps-1">
+                            <strong class="font-600">Keripik Sipisang Rasa Jagu...</strong>
+                            <span class="opacity-90">12 Jun 2023 - 14:30</span>
+                        </div>
+                        <p
+                            class="font-15 font-500 color-theme text-end ms-auto line-height-xl align-self-start pt-2">
+                            Rp50.000
+                            <span class="font-400 text-primary opacity-90">COD</span>
+                        </p>
+                    </a>
+                    <!-- Refund -->
+                    <a href="#" class="list-group-item border-top-0 border-start-0 border-end-0">
+                        <i class="mx-1 text-warning bi bi-arrow-counterclockwise font-25"></i>
+                        <div class="ps-1">
+                            <strong class="font-600">Pengembalian Dana</strong>
+                            <span class="opacity-90">14 Jun 2023 - 14:30</span>
+                        </div>
+                        <p
+                            class="font-15 font-500 color-theme text-end ms-auto line-height-xl align-self-start pt-2">
+                            Rp200.000
+                            <span class="font-400 text-danger opacity-90">Refund</span>
+                        </p>
+                    </a>
+                    <!-- Langganan Sisella -->
+                    <a href="#" class="list-group-item border-top-0 border-start-0 border-end-0">
+                        <i class="mx-1 text-danger bi bi-arrow-repeat font-25"></i>
+                        <div class="ps-1">
+                            <strong class="font-600">Langganan Sisella</strong>
+                            <span class="opacity-90">16 Jun 2023 - 14:30</span>
+                        </div>
+                        <p
+                            class="font-15 font-500 color-theme text-end ms-auto line-height-xl align-self-start pt-2">
+                            Rp27.000
+                            <span class="font-400 text-danger opacity-90">Langganan</span>
+                        </p>
+                    </a>
+                    <!-- Donasi Sisella -->
+                    <a href="#" class="list-group-item border-top-0 border-start-0 border-end-0">
+                        <i class="mx-1 text-danger bi bi-heart-fill font-25"></i>
+                        <div class="ps-1">
+                            <strong class="font-600">Donasi Sisella</strong>
+                            <span class="opacity-90">18 Jun 2023 - 14:30</span>
+                        </div>
+                        <p
+                            class="font-15 font-500 color-theme text-end ms-auto line-height-xl align-self-start pt-2">
+                            Rp30.000
+                            <span class="font-400 text-primary opacity-90">Donasi</span>
+                        </p>
+                    </a>
+                    <!-- End riwayat Transaksi -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+      <!-- End of Page Content-->
+    </div>
+    <!--End of Page ID-->
+
+    <script src="../../scripts/bootstrap.min.js"></script>
+    <script src="../../scripts/custom.js"></script>
+  </body>
+</html>
