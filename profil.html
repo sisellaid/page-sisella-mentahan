@@ -1,236 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
     <title>Duo Mobile PWA Kit</title>
     <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
     <!-- <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css"> -->
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="manifest" href="_manifest.json" />
     <meta id="theme-check" name="theme-color" content="#FFFFFF" />
-    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png" />
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="app/icons/icon-192x192.png"
+    />
+  </head>
 
-<body class="theme-light">
+  <body class="theme-light">
     <div id="preloader">
-        <div class="spinner-border color-highlight" role="status"></div>
+      <div class="spinner-border color-highlight" role="status"></div>
     </div>
 
     <div id="page">
-        <!-- Header -->
-        <div class="header-bar header-fixed header-app header-bar-detached">
-            <a href="http://localhost/page-sisella-mentahan">
-                <img class="m-3" src="images/logo/logo_sisella_normal.png" height="25px" class="sisella-logo" /></a>
-            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"
-                class="header-title text-end color-theme font-14">
-                Diana
-                <img class="m-3 rounded-circle border border-2" src="images/user-profile/pic2.png"
-                    data-src="images/pictures/10s.jpg" alt="img" height="30px" />
-            </a>
-        </div>
+      <!-- Header -->
+      <div class="header-bar header-fixed header-app header-bar-detached">
+        <a href="index.html">
+          <img
+            class="m-3"
+            src="images/logo/logo_sisella_normal.png"
+            height="25px"
+            class="sisella-logo"
+        /></a>
+        <a
+          href="#"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menu-main"
+          class="header-title text-end color-theme font-14"
+        >
+          Diana
+          <img
+            class="m-3 rounded-circle border border-2"
+            src="images/user-profile/pic2.png"
+            data-src="images/pictures/10s.jpg"
+            alt="img"
+            height="30px"
+          />
+        </a>
+      </div>
 
-        <!-- Footer Bar-->
-        <div id="footer-bar" class="footer-bar footer-bar-detached">
-            <a href="index.html"><i class="bi bi-house-fill font-15"></i><span>Beranda</span></a>
-            <a href="riwayat.html"><i class="bi bi-receipt font-17"></i><span>Riwayat</span></a>
-            <a href="penjualan.html" class="active-nav"><i
-                    class="bi bi-basket2-fill font-16"></i><span>Penjualan</span></a>
-            <a href="produk-media.html"><i class="bi bi-box2-fill font-16"></i><span>Produk</span></a>
-            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i
-                    class="bi bi-person-circle"></i><span>Saya</span></a>
-        </div>
+      <!-- Footer Bar-->
+      <div id="footer-bar" class="footer-bar footer-bar-detached">
+        <a href="index.html"
+          ><i class="bi bi-house-fill font-15"></i><span>Beranda</span></a
+        >
+        <a href="riwayat.html"
+          ><i class="bi bi-receipt font-17"></i><span>Riwayat</span></a
+        >
+        <a href="penjualan.html" class="active-nav"
+          ><i class="bi bi-basket2-fill font-16"></i><span>Penjualan</span></a
+        >
+        <a href="produk-media.html"
+          ><i class="bi bi-box2-fill font-16"></i><span>Produk</span></a
+        >
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"
+          ><i class="bi bi-person-circle"></i><span>Saya</span></a
+        >
+      </div>
 
-        <!-- Main Sidebar-->
-        <div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html" style="width: 280px"
-            class="offcanvas offcanvas-end offcanvas-attached"></div>
+      <!-- Main Sidebar-->
+      <div
+        id="menu-main"
+        data-menu-active="nav-comps"
+        data-menu-load="menu-main.html"
+        style="width: 280px"
+        class="offcanvas offcanvas-end offcanvas-attached"
+      ></div>
 
-        <!-- Your Page Content Goes Here-->
-        <div class="page-content header-clear-large">
-            <!-- Profile User -->
-            <div class="card card-style mb-3">
-                <div class="content">
-                    <div class="d-flex">
-                        <div class="align-self-center">
-                            <a class="col" data-gallery="gallery-3" href="images/user-profile/pic2.png"
-                                title="Diana Kurniasari">
-                                <img src="images/empty.png" data-src="images/user-profile/pic2.png"
-                                    class="preload-img img-fluid rounded-circle border" alt="img" width="100px">
-                            </a>
-                        </div>
-                        <div class="align-self-center">
-                            <h4 class="ps-3 mb-0">Diana Kurniasari Diana Kurniasari<i
-                                    class="bi bi-check-circle-fill color-highlight ms-2"></i></h4>
-                            <p class="ps-3 font-13 mb-n1"><i
-                                    class="bi bi-geo-alt-fill color-highlight me-2"></i>Boyolali</p>
-                            <p class="ms-3 my-1 font-13 border rounded-s text-center"> <a href=""><i
-                                        class="bi bi-box2-fill me-2"></i>Supplier</a></p>
-                            <p class="ms-3 my-1 font-13 border rounded-s text-center"> <a href=""><i
-                                        class="bi bi-basket2-fill me-2"></i>Toko</a></p>
-                        </div>
-                    </div>
-                    <!-- Bar Angka skor dan penjualan -->
-
-                    <!-- berisi badge pencapaian -->
-                    <div class="row text-center row-cols-3 my-2">
-                        <a class="col-2">
-                            <img src="images/empty.png" data-src="images/user-profile/pic.png"
-                                class="preload-img img-fluid rounded-circle" alt="img">
-                        </a>
-                        <a class="col-2">
-                            <img src="images/empty.png" data-src="images/user-profile/pic.png"
-                                class="preload-img img-fluid rounded-circle" alt="img">
-                        </a>
-                        <a class="col-2">
-                            <img src="images/empty.png" data-src="images/user-profile/pic.png"
-                                class="preload-img img-fluid rounded-circle" alt="img">
-                        </a>
-                        <a class="col-2">
-                            <img src="images/empty.png" data-src="images/user-profile/pic.png"
-                                class="preload-img img-fluid rounded-circle" alt="img">
-                        </a>
-                        <a class="col-2">
-                            <img src="images/empty.png" data-src="images/user-profile/pic.png"
-                                class="preload-img img-fluid rounded-circle" alt="img">
-                        </a>
-                        <a class="col-2">
-                            <img src="images/empty.png" data-src="images/user-profile/pic.png"
-                                class="preload-img img-fluid rounded-circle" alt="img">
-                        </a>
-                    </div>
-                    <!-- End Badge pencapaian user -->
-                    <div class="divider mt-4"></div>
-                    <div class="row mt-3">
-                        <div class="col-4 text-center">
-                            <h4 class="font-20">513</h4>
-                            <p class="font-12">Skor</p>
-                        </div>
-                        <div class="col-4 text-center">
-                            <h4 class="font-20">63</h4>
-                            <p class="font-12">Stok Produk</p>
-                        </div>
-                        <div class="col-4 text-center">
-                            <h4 class="font-20">513</h4>
-                            <p class="font-12">Reseller Saya</p>
-                        </div>
-                    </div>
-                    <!-- End angka dan penjualan -->
-
-                    <div class="divider mt-4"></div>
-
-                    <div class="list-group list-custom list-group-m list-group-flush rounded-xs">
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-globe2"></i>
-                            <div>Website</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-whatsapp"></i>
-                            <div>Whatsapp</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-instagram"></i>
-                            <div>Instagram</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-tiktok"></i>
-                            <div>TikTok</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
+      <!-- Your Page Content Goes Here-->
+      <div class="page-content header-clear-large">
+        <!-- Profile User -->
+        <div class="card card-style mb-3">
+          <div class="content">
+            <div class="d-flex">
+              <div class="align-self-center">
+                <a
+                  class="col"
+                  data-gallery="gallery-3"
+                  href="images/user-profile/pic2.png"
+                  title="Diana Kurniasari"
+                >
+                  <img
+                    src="images/empty.png"
+                    data-src="images/user-profile/pic2.png"
+                    class="preload-img img-fluid rounded-circle border"
+                    alt="img"
+                    width="100px"
+                  />
+                </a>
+              </div>
+              <div class="align-self-center">
+                <h4 class="ps-3 mb-0">
+                  Diana Kurniasari<i
+                    class="bi bi-check-circle-fill color-highlight ms-2"
+                  ></i>
+                </h4>
+                <p class="ps-3 font-13 mb-n1">
+                  <i class="bi bi-geo-alt-fill color-highlight me-2"></i
+                  >Boyolali
+                </p>
+                <p class="ms-3 my-1 font-13 border rounded-s text-center">
+                  <a href=""><i class="bi bi-box2-fill me-2"></i>Supplier</a>
+                </p>
+                <p class="ms-3 my-1 font-13 border rounded-s text-center">
+                  <a href=""><i class="bi bi-basket2-fill me-2"></i>Toko</a>
+                </p>
+              </div>
             </div>
-            <!-- End Profil User -->
+            <!-- Bar Angka skor dan penjualan -->
 
-            <!-- Menu Profil -->
-            <div class="card card-style mb-3">
-                <div class="content">
-                    <h4 class="font-14 font-500">Akun</h4>
-                    <div class="list-group list-custom list-group-m list-group-flush rounded-xs">
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-box2-fill"></i>
-                            <div>Daftar Transaksi</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-wallet-fill"></i>
-                            <div>Saldo</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-geo-alt-fill"></i>
-                            <div>Daftar Alamat</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-person-fill"></i>
-                            <div>Daftar Reseller</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-basket2-fill"></i>
-                            <div>Toko Saya</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-gear-fill"></i>
-                            <div>Pengaturan Profil</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-shield-fill-check"></i>
-                            <div>Pengaturan Keamanan</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-door-open-fill"></i>
-                            <div>Keluar</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
+            <!-- berisi badge pencapaian -->
+            <div class="row text-center row-cols-3 my-2">
+              <a class="col-2">
+                <img
+                  src="images/empty.png"
+                  data-src="images/user-profile/pic.png"
+                  class="preload-img img-fluid rounded-circle"
+                  alt="img"
+                />
+              </a>
+              <a class="col-2">
+                <img
+                  src="images/empty.png"
+                  data-src="images/user-profile/pic.png"
+                  class="preload-img img-fluid rounded-circle"
+                  alt="img"
+                />
+              </a>
+              <a class="col-2">
+                <img
+                  src="images/empty.png"
+                  data-src="images/user-profile/pic.png"
+                  class="preload-img img-fluid rounded-circle"
+                  alt="img"
+                />
+              </a>
+              <a class="col-2">
+                <img
+                  src="images/empty.png"
+                  data-src="images/user-profile/pic.png"
+                  class="preload-img img-fluid rounded-circle"
+                  alt="img"
+                />
+              </a>
+              <a class="col-2">
+                <img
+                  src="images/empty.png"
+                  data-src="images/user-profile/pic.png"
+                  class="preload-img img-fluid rounded-circle"
+                  alt="img"
+                />
+              </a>
+              <a class="col-2">
+                <img
+                  src="images/empty.png"
+                  data-src="images/user-profile/pic.png"
+                  class="preload-img img-fluid rounded-circle"
+                  alt="img"
+                />
+              </a>
             </div>
-            <!-- end menu profil -->
+            <!-- End Badge pencapaian user -->
+            <div class="divider mt-4"></div>
+            <div class="row mt-3">
+              <div class="col-4 text-center">
+                <h4 class="font-20">5136</h4>
+                <p class="font-12">Skor</p>
+              </div>
+              <div class="col-4 text-center">
+                <h4 class="font-20">63</h4>
+                <p class="font-12">Stok Produk</p>
+              </div>
+              <div class="col-4 text-center">
+                <h4 class="font-20">513</h4>
+                <p class="font-12">Reseller Saya</p>
+              </div>
+            </div>
+            <!-- End angka dan penjualan -->
 
-            <!-- Menu bantuan -->
-            <div class="card card-style mb-3">
-                <div class="content">
-                    <h4 class="font-14 font-500">Bantuan</h4>
-                    <div class="list-group list-custom list-group-m list-group-flush rounded-xs">
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-question-circle-fill"></i>
-                            <div>Pusat Bantuan</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="bi color-dark bi-journal-text"></i>
-                            <div>Syarat & Ketentuan</div>
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="divider mt-4"></div>
+
+            <div
+              class="list-group list-custom list-group-m list-group-flush rounded-xs"
+            >
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-globe2"></i>
+                <div>Website</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-whatsapp"></i>
+                <div>Whatsapp</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-instagram"></i>
+                <div>Instagram</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-tiktok"></i>
+                <div>TikTok</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
             </div>
-            <!-- end menu bantuan -->
+          </div>
         </div>
+        <!-- End Profil User -->
 
-    </div>
+        <!-- Menu Profil -->
+        <div class="card card-style mb-3">
+          <div class="content">
+            <h4 class="font-14 font-500">Akun</h4>
+            <div
+              class="list-group list-custom list-group-m list-group-flush rounded-xs"
+            >
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-box2-fill"></i>
+                <div>Daftar Transaksi</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-wallet-fill"></i>
+                <div>Saldo</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-geo-alt-fill"></i>
+                <div>Daftar Alamat</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-person-fill"></i>
+                <div>Daftar Reseller</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-basket2-fill"></i>
+                <div>Toko Saya</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-gear-fill"></i>
+                <div>Pengaturan Profil</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-shield-fill-check"></i>
+                <div>Pengaturan Keamanan</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-door-open-fill"></i>
+                <div>Keluar</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end menu profil -->
+
+        <!-- Menu bantuan -->
+        <div class="card card-style mb-3">
+          <div class="content">
+            <h4 class="font-14 font-500">Bantuan</h4>
+            <div
+              class="list-group list-custom list-group-m list-group-flush rounded-xs"
+            >
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-question-circle-fill"></i>
+                <div>Pusat Bantuan</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <a href="#" class="list-group-item">
+                <i class="bi color-dark bi-journal-text"></i>
+                <div>Syarat & Ketentuan</div>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end menu bantuan -->
+      </div>
     </div>
     <!-- End of Page Content-->
     <!--End of Page ID-->
 
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/custom.js"></script>
-</body>
-
+  </body>
 </html>

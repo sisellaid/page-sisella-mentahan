@@ -1,165 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
     <title>Duo Mobile PWA Kit</title>
     <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
     <!-- <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css"> -->
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="manifest" href="_manifest.json" />
     <meta id="theme-check" name="theme-color" content="#FFFFFF" />
-    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png" />
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="app/icons/icon-192x192.png"
+    />
+  </head>
 
-<body class="theme-light">
+  <body class="theme-light">
     <div id="preloader">
-        <div class="spinner-border color-highlight" role="status"></div>
+      <div class="spinner-border color-highlight" role="status"></div>
     </div>
 
     <div id="page">
-        <!-- Header -->
-        <div class="header-bar header-fixed header-app header-bar-detached">
-            <a href="http://localhost/page-sisella-mentahan">
-                <img class="m-3" src="images/logo/logo_sisella_normal.png" height="25px" class="sisella-logo" /></a>
-        </div>
+      <!-- Header -->
+      <div class="header-bar header-fixed header-app header-bar-detached">
+        <a href="index.html">
+          <img
+            class="m-3"
+            src="images/logo/logo_sisella_normal.png"
+            height="25px"
+            class="sisella-logo"
+        /></a>
+      </div>
 
-        <!-- Main Sidebar-->
-        <div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html" style="width: 280px"
-            class="offcanvas offcanvas-end offcanvas-attached"></div>
+      <!-- Main Sidebar-->
+      <div
+        id="menu-main"
+        data-menu-active="nav-comps"
+        data-menu-load="menu-main.html"
+        style="width: 280px"
+        class="offcanvas offcanvas-end offcanvas-attached"
+      ></div>
 
-        <!-- Your Page Content Goes Here-->
+      <!-- Your Page Content Goes Here-->
 
-        <!-- Card Daftar -->
-        <div class="page-content header-clear-large">
-            <div class="card card-style">
-                <div class="content">
-                    <h1 class="text-center font-400 font-26 mb-2">Buat Akun</h1>
-                    <p class="text-center font-13 mt-n2 mb-3">
-                        Daftar dan kelola penjualan kamu sekarang
-                    </p>
-                    <form class="demo-animation needs-validation m-0" novalidate>
-                        <!-- Field Nama Lengkap -->
-                        <div class="form-custom form-label form-icon mb-3">
-                            <i class="bi bi-person-circle font-14"></i>
-                            <input type="text" class="form-control rounded-xs" id="c1" placeholder="Nama Lengkap"
-                                pattern="[A-Za-z ]{1,32}" required />
-                            <label for="c1" class="color-theme text-capitalize">Nama Lengkap</label>
-                            <div class="valid-feedback">
-                                Bagus!
-                                <!-- text for field valid-->
-                            </div>
-                            <div class="invalid-feedback">Maaf Nama Masih Kosong Atau Tidak Sesuai</div>
-                            <span>(Wajib)</span>
-                        </div>
-                        <!-- End field nama -->
-                        <!-- Field Nama panggilan -->
-
-                        <div class="form-custom form-label form-icon mb-3">
-                            <i class="bi bi-person-circle font-14"></i>
-                            <input type="text" class="form-control rounded-xs" id="c1" placeholder="Nama Panggilan"
-                                pattern="[A-Za-z ]{1,32}" required />
-                            <label for="c1" class="color-theme text-capitalize">Bagaimana Kami harus memanggil nama
-                                Anda?</label>
-                            <div class="valid-feedback">
-                                Bagus!
-                                <!-- text for field valid-->
-                            </div>
-                            <div class="invalid-feedback">Maaf Nama Panggilan Masih Kosong Atau Tidak Sesuai</div>
-                            <span>(Wajib)</span>
-                        </div>
-                        <!-- End field nama panggilan -->
-                        <!-- Field Sebutan -->
-                        <div class="form-custom form-label form-icon mb-3">
-                            <i class="bi bi-check-circle font-13"></i>
-                            <select class="form-select rounded-xs" id="c6" aria-label="Floating label select">
-                                <option value="Kak">Kak</option>
-                                <option value="Bapak">Bapak</option>
-                                <option value="Ibu">Ibu</option>
-                                <option value="Abi">Abi</option>
-                                <option value="Ummi">Ummi</option>
-                                <option value="Mas">Mas</option>
-                                <option value="Mbak">Mbak</option>
-                                <option value="Bro">Bro</option>
-                                <option value="Sist">Sist</option>
-                                <option value="Dik">Dik</option>
-                            </select>
-                            <label for="c1" class="color-theme text-capitalize">Bagaimana Kami harus menyebut
-                                Anda?</label>
-                            <div class="valid-feedback">
-                                Bagus!
-                                <!-- text for field valid-->
-                            </div>
-                        </div>
-                        <!-- End field sebutan -->
-                        <!-- Field No Hp -->
-                        <div class="form-custom form-label form-icon mb-3">
-                            <i class="bi bi-telephone-fill font-12"></i>
-                            <input type="tel" class="form-control rounded-xs" id="c3" placeholder="62 234 567 315"
-                                pattern="[+ 0-9]{10,15}" required />
-                            <label for="c3" class="color-theme text-capitalize">No WA Aktif</label>
-                            <div class="valid-feedback">
-                                Bagus!
-                                <!-- text for field valid-->
-                            </div>
-                            <div class="invalid-feedback">
-                                Silahkan Isikan Nomor HP/WA Anda. (tanpa spasi)
-                            </div>
-                            <span>(Wajib)</span>
-                        </div>
-                        <!-- End field No Hp -->
-                        <!-- Field Password -->
-                        <div class="form-custom form-label form-icon mb-3">
-                            <i class="bi bi-asterisk font-12"></i>
-                            <input type="password" class="form-control rounded-xs" id="c2a" placeholder="Password"
-                                pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])\S{8,}" required />
-                            <label for="c2a" class="color-theme">Your Password</label>
-                            <div class="valid-feedback">
-                                Password address looks good!
-                                <!-- text for field valid-->
-                            </div>
-                            <div class="invalid-feedback">
-                                Minumum 8 Karakter, 1 Angka dan 1 Huruf Kapital.
-                            </div>
-                            <span>(wajib)</span>
-                        </div>
-                        <!-- End field password -->
-
-                        <button
-                            class="btn btn-full gradient-blue shadow-bg shadow-bg-s rounded-sm text-uppercase font-700 w-100 btn-s mt-4 mb-3"
-                            type="submit">
-                            Kirim
-                        </button>
-                    </form>
-
-                    <div>
-                        <p>
-                            Dengan mendaftar sebagai user Sisella maka Anda telah menyetujui <a
-                                href="syarat-ketentuan.html">Syarat dan
-                                Ketentuan Kami.</a>
-                        </p>
-                        <a href="index.html" class="color-blue font-12">Sudah Punya Akun?</a>
-                    </div>
+      <!-- Card Daftar -->
+      <div class="page-content header-clear-large">
+        <div class="card card-style">
+          <div class="content">
+            <h1 class="text-center font-400 font-26 mb-2">Buat Akun</h1>
+            <p class="text-center font-13 mt-n2 mb-3">
+              Daftar dan kelola penjualan kamu sekarang
+            </p>
+            <form class="demo-animation needs-validation m-0" novalidate>
+              <!-- Field Nama Lengkap -->
+              <div class="form-custom form-label form-icon mb-3">
+                <i class="bi bi-person-circle font-14"></i>
+                <input
+                  type="text"
+                  class="form-control rounded-xs"
+                  id="c1"
+                  placeholder="Nama Lengkap"
+                  pattern="[A-Za-z ]{1,32}"
+                  required
+                />
+                <label for="c1" class="color-theme text-capitalize"
+                  >Nama Lengkap</label
+                >
+                <div class="valid-feedback">
+                  Bagus!
+                  <!-- text for field valid-->
                 </div>
+                <div class="invalid-feedback">
+                  Maaf Nama Masih Kosong Atau Tidak Sesuai
+                </div>
+                <span>(Wajib)</span>
+              </div>
+              <!-- End field nama -->
+              <!-- Field Nama panggilan -->
+
+              <div class="form-custom form-label form-icon mb-3">
+                <i class="bi bi-person-circle font-14"></i>
+                <input
+                  type="text"
+                  class="form-control rounded-xs"
+                  id="c1"
+                  placeholder="Nama Panggilan"
+                  pattern="[A-Za-z ]{1,32}"
+                  required
+                />
+                <label for="c1" class="color-theme text-capitalize"
+                  >Bagaimana Kami harus memanggil nama Anda?</label
+                >
+                <div class="valid-feedback">
+                  Bagus!
+                  <!-- text for field valid-->
+                </div>
+                <div class="invalid-feedback">
+                  Maaf Nama Panggilan Masih Kosong Atau Tidak Sesuai
+                </div>
+                <span>(Wajib)</span>
+              </div>
+              <!-- End field nama panggilan -->
+              <!-- Field Sebutan -->
+              <div class="form-custom form-label form-icon mb-3">
+                <i class="bi bi-check-circle font-13"></i>
+                <select
+                  class="form-select rounded-xs"
+                  id="c6"
+                  aria-label="Floating label select"
+                >
+                  <option value="Kak">Kak</option>
+                  <option value="Bapak">Bapak</option>
+                  <option value="Ibu">Ibu</option>
+                  <option value="Abi">Abi</option>
+                  <option value="Ummi">Ummi</option>
+                  <option value="Mas">Mas</option>
+                  <option value="Mbak">Mbak</option>
+                  <option value="Bro">Bro</option>
+                  <option value="Sist">Sist</option>
+                  <option value="Dik">Dik</option>
+                </select>
+                <label for="c1" class="color-theme text-capitalize"
+                  >Bagaimana Kami harus menyebut Anda?</label
+                >
+                <div class="valid-feedback">
+                  Bagus!
+                  <!-- text for field valid-->
+                </div>
+              </div>
+              <!-- End field sebutan -->
+              <!-- Field No Hp -->
+              <div class="form-custom form-label form-icon mb-3">
+                <i class="bi bi-telephone-fill font-12"></i>
+                <input
+                  type="tel"
+                  class="form-control rounded-xs"
+                  id="c3"
+                  placeholder="62 234 567 315"
+                  pattern="[+ 0-9]{10,15}"
+                  required
+                />
+                <label for="c3" class="color-theme text-capitalize"
+                  >No WA Aktif</label
+                >
+                <div class="valid-feedback">
+                  Bagus!
+                  <!-- text for field valid-->
+                </div>
+                <div class="invalid-feedback">
+                  Silahkan Isikan Nomor HP/WA Anda. (tanpa spasi)
+                </div>
+                <span>(Wajib)</span>
+              </div>
+              <!-- End field No Hp -->
+              <!-- Field Password -->
+              <div class="form-custom form-label form-icon mb-3">
+                <i class="bi bi-asterisk font-12"></i>
+                <input
+                  type="password"
+                  class="form-control rounded-xs"
+                  id="c2a"
+                  placeholder="Password"
+                  pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])\S{8,}"
+                  required
+                />
+                <label for="c2a" class="color-theme">Your Password</label>
+                <div class="valid-feedback">
+                  Password address looks good!
+                  <!-- text for field valid-->
+                </div>
+                <div class="invalid-feedback">
+                  Minumum 8 Karakter, 1 Angka dan 1 Huruf Kapital.
+                </div>
+                <span>(wajib)</span>
+              </div>
+              <!-- End field password -->
+
+              <button
+                class="btn btn-full gradient-blue shadow-bg shadow-bg-s rounded-sm text-uppercase font-700 w-100 btn-s mt-4 mb-3"
+                type="submit"
+              >
+                Kirim
+              </button>
+            </form>
+
+            <div>
+              <p>
+                Dengan mendaftar sebagai user Sisella maka Anda telah menyetujui
+                <a href="syarat-ketentuan.html">Syarat dan Ketentuan Kami.</a>
+              </p>
+              <a href="index.html" class="color-blue font-12"
+                >Sudah Punya Akun?</a
+              >
             </div>
-            <!-- End Card Daftar -->
+          </div>
         </div>
+        <!-- End Card Daftar -->
+      </div>
     </div>
     <!-- End of Page Content-->
-    </div>
     <!--End of Page ID-->
 
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/custom.js"></script>
-</body>
-
+  </body>
 </html>
