@@ -12,9 +12,9 @@
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
     />
     <title>Duo Mobile PWA Kit</title>
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/bootstrap.css" />
     <!-- <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css"> -->
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
@@ -24,12 +24,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <link rel="manifest" href="_manifest.json" />
+    <link rel="manifest" href="../../_manifest.json" />
     <meta id="theme-check" name="theme-color" content="#FFFFFF" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="app/icons/icon-192x192.png"
+      href="../../app/icons/icon-192x192.png"
     />
   </head>
 
@@ -40,55 +40,14 @@
 
     <div id="page">
       <!-- Header -->
-      <div class="header-bar header-fixed header-app header-bar-detached">
-        <a href="index.html">
-          <img
-            class="m-3"
-            src="images/logo/logo_sisella_normal.png"
-            height="25px"
-            class="sisella-logo"
-        /></a>
-        <a
-          href="#"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#menu-main"
-          class="header-title text-end color-theme font-14"
-        >
-          Diana
-          <img
-            class="m-3 rounded-circle border border-2"
-            src="images/user-profile/pic2.png"
-            data-src="images/pictures/10s.jpg"
-            alt="img"
-            height="30px"
-          />
-        </a>
-      </div>
-
-      <!-- Footer Bar-->
-      <div id="footer-bar" class="footer-bar footer-bar-detached">
-        <a href="index.html"
-          ><i class="bi bi-house-fill font-15"></i><span>Beranda</span></a
-        >
-        <a href="riwayat.html"
-          ><i class="bi bi-receipt font-17"></i><span>Riwayat</span></a
-        >
-        <a href="penjualan.html" class="active-nav"
-          ><i class="bi bi-basket2-fill font-16"></i><span>Penjualan</span></a
-        >
-        <a href="produk-media.html"
-          ><i class="bi bi-box2-fill font-16"></i><span>Produk</span></a
-        >
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"
-          ><i class="bi bi-person-circle"></i><span>Saya</span></a
-        >
-      </div>
-
+      <div id="header-bar"></div>
+      <!-- Footer Bar -->
+      <div id="footer-bar"></div>
       <!-- Main Sidebar-->
       <div
         id="menu-main"
         data-menu-active="nav-comps"
-        data-menu-load="menu-main.html"
+        data-menu-load="../menu-main.html"
         style="width: 280px"
         class="offcanvas offcanvas-end offcanvas-attached"
       ></div>
@@ -144,7 +103,7 @@
               class="btn btn-full btn-s btn-light shadow-m color-highlight rounded-l"
               ><i class="bi bi-clipboard2-check font-25"></i
             ></a>
-            <span class="color-highlight font-12 font-400">Pesanan</span>
+            <span class="color-highlight font-12 font-400">Laporan</span>
           </div>
           <div class="col text-center">
             <a
@@ -162,7 +121,7 @@
             <div class="row">
               <div class="col-3 me-2">
                 <img
-                  src="images/bank-icons/bca.png"
+                  src="../../images/bank-icons/bca.png"
                   alt=""
                   width="80px"
                   class="shadow-s border p-2 rounded-s"
@@ -335,11 +294,12 @@
           </div>
         </div>
       </div>
+      <!-- End of Page Content-->
     </div>
-    <!-- End of Page Content-->
     <!--End of Page ID-->
 
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/custom.js"></script>
+    <script src="../../scripts/bootstrap.min.js"></script>
+    <script src="panggil-template-saldo.js"></script>
+    <script src="../../scripts/custom.js"></script>
   </body>
 </html>

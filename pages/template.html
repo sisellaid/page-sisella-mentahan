@@ -12,9 +12,9 @@
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
     />
     <title>Duo Mobile PWA Kit</title>
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/bootstrap.css" />
     <!-- <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css"> -->
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
@@ -24,12 +24,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <link rel="manifest" href="_manifest.json" />
+    <link rel="manifest" href="../../_manifest.json" />
     <meta id="theme-check" name="theme-color" content="#FFFFFF" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="app/icons/icon-192x192.png"
+      href="../../app/icons/icon-192x192.png"
     />
   </head>
 
@@ -40,31 +40,9 @@
 
     <div id="page">
       <!-- Header -->
-      <div class="header-bar header-fixed header-app header-bar-detached">
-        <a href="index.html">
-          <img
-            class="m-3"
-            src="images/logo/logo_sisella_normal.png"
-            height="25px"
-            class="sisella-logo"
-        /></a>
-        <a
-          href="#"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#menu-main"
-          class="header-title text-end color-theme font-14"
-        >
-          Diana
-          <img
-            class="m-3 rounded-circle border border-2"
-            src="images/user-profile/pic2.png"
-            data-src="images/pictures/10s.jpg"
-            alt="img"
-            height="30px"
-          />
-        </a>
-      </div>
-
+      <div id="header-bar"></div>
+      <!-- Footer Bar -->
+      <div id="footer-bar"></div>
       <!-- Main Sidebar-->
       <div
         id="menu-main"
@@ -75,21 +53,13 @@
       ></div>
 
       <!-- Your Page Content Goes Here-->
-      <!-- Carousel -->
+
+      <!-- End of Page Content-->
     </div>
-    <!-- End of Page Content-->
     <!--End of Page ID-->
 
-    <!-- <script>
-      fetch("./header-nav.html")
-        .then((response) => {
-          return response.text();
-        })
-        .then((data) => {
-          document.getElementById("headerNav").innerHTML = data;
-        });
-    </script> -->
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/custom.js"></script>
+    <script src="../../scripts/bootstrap.min.js"></script>
+    <script src="panggil-halaman.js"></script>
+    <script src="../../scripts/custom.js"></script>
   </body>
 </html>
