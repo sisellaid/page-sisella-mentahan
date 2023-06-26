@@ -40,9 +40,10 @@
 
     <div id="page">
       <!-- Header -->
-      <div id="header-bar"></div>
+      <iframe src="header-bar.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
       <!-- Footer Bar -->
-      <div id="footer-bar"></div>
+      <iframe src="footer-bar.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+
       <!-- Main Sidebar-->
       <div
         id="menu-main"
@@ -235,7 +236,6 @@
     <!--End of Page ID-->
 
     <script src="../../scripts/bootstrap.min.js"></script>
-    <script src="panggil-halaman.js"></script>
     <script src="../../scripts/custom.js"></script>
   </body>
 </html>
