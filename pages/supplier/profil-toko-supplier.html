@@ -137,6 +137,18 @@
                             class="btn btn-xs border color-gray-dark me-2 rounded-m"><i
                                 class="bi bi-exclamation-triangle-fill"></i></a>
                     </div>
+
+                    <!-- Catatan Supplier -->
+                    <div class="offcanvas offcanvas-modal rounded-m offcanvas-detached bg-theme" style="width:340px"
+                        id="notes-profil-supplier">
+                        <div class="content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi culpa eaque, provident
+                            praesentium ab natus ex reiciendis quas doloremque voluptatibus esse eos dignissimos aut,
+                            ducimus quod, tempora repudiandae amet nisi?
+                        </div>
+                    </div>
+                    <!-- end Catatan Supplier -->
+
                     <!-- Share -->
                     <div class="offcanvas offcanvas-modal rounded-m offcanvas-detached bg-theme" style="width:340px"
                         id="share-profil-supplier">
@@ -263,13 +275,17 @@
                         </div>
                         <!-- Produk -->
                         <div class="collapse show" id="tab-produk" data-bs-parent="#tab-group-4">
-                            <div class="d-flex mt-3">
-                                <div class="col-6 p-1">
+                            <div class="row mt-3">
+                                <!-- item produk -->
+                                <div class="col bg-light p-2 m-1 rounded-s">
                                     <img src="http://127.0.0.1:3000/images/pictures/6t.png"
                                         class="img-fluid rounded-xs mb-1" alt="img">
                                     <h5 class="color-dark mb-1 font-14 font-400">Keripik Pisang Rasa Balado 100gr ...
                                     </h5>
-                                    <h5 class="text-dark mb-1 font-600">Rp8.000.000 </h5>
+                                    <h5 class="text-dark mb-1 font-600">Rp10.000 </h5>
+                                    <h5 class="text-dark mb-1 font-12 font-400 opacity-50">Harga Supplier :
+                                        <strong>Rp8.000</strong>
+                                    </h5>
 
                                     <div class="progress rounded-s" style="height:4px">
                                         <div class="progress-bar gradient-red" role="progressbar" style="width: 35%"
@@ -277,30 +293,74 @@
                                     </div>
                                     <p class="font-12 mb-0">Stok 381 | Terjual 431</p>
                                     <i class="font-13 color-yellow-dark bi bi-star-fill"></i>
-                                    <strong class="color-dark font-12 opacity-30 ps-1">5.0</strong>
-                                    <a href="" class="btn btn-full btn-xs btn-primary rounded-m mt-1"><i
-                                            class="bi bi-basket2-fill"></i> Restock</a>
-                                </div>
-                                <div class="col-6 p-1">
-                                    <img src="http://127.0.0.1:3000/images/pictures/7t.png"
-                                        class="img-fluid rounded-xs mb-1" alt="img">
-                                    <h5 class="color-dark mb-1 font-14 font-400">Keripik Pisang Rasa Coklat 100gr ...
+                                    <strong class="color-dark font-12 opacity-30 ps-1">5.0 | 34 Ulasan</strong>
+                                    <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Harga Jual :
+                                        <strong>Rp14.000</strong>
                                     </h5>
-                                    <h5 class="text-dark mb-1 font-600">Rp8.000.000 </h5>
+                                    <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Keuntungan : <strong
+                                            class="text-success">Rp4.000</strong>
+                                    </h5>
+                                    <a href="" class="btn btn-xs btn-full btn-primary"><i
+                                            class="bi bi-basket2-fill me-2"></i> Restock</a>
+                                </div>
+                                <!-- end item produk -->
+
+                                <!-- item produk -->
+                                <div class="col bg-light p-2 m-1 rounded-s">
+                                    <img src="http://127.0.0.1:3000/images/pictures/6t.png"
+                                        class="img-fluid rounded-xs mb-1" alt="img">
+                                    <h5 class="color-dark mb-1 font-14 font-400">Keripik Pisang Rasa Balado 100gr ...
+                                    </h5>
+                                    <h5 class="text-dark mb-1 font-600">Rp10.000 </h5>
+                                    <h5 class="text-dark mb-1 font-12 font-400 opacity-50">Harga Supplier :
+                                        <strong>Rp8.000</strong>
+                                    </h5>
 
                                     <div class="progress rounded-s" style="height:4px">
-                                        <div class="progress-bar gradient-red" role="progressbar" style="width: 65%"
+                                        <div class="progress-bar gradient-red" role="progressbar" style="width: 35%"
                                             aria-valuenow="35" aria-valuemin="0" aria-valuemax="1000"></div>
                                     </div>
                                     <p class="font-12 mb-0">Stok 381 | Terjual 431</p>
                                     <i class="font-13 color-yellow-dark bi bi-star-fill"></i>
-                                    <strong class="color-dark font-12 opacity-30 ps-1">5.0</strong>
-                                    <a href="" class="btn btn-full btn-xs btn-primary rounded-m mt-1"><i
-                                            class="bi bi-basket2-fill"></i> Restock</a>
+                                    <strong class="color-dark font-12 opacity-30 ps-1">5.0 | 34 Ulasan</strong>
+                                    <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Harga Jual :
+                                        <strong>Rp14.000</strong>
+                                    </h5>
+                                    <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Keuntungan : <strong
+                                            class="text-success">Rp4.000</strong>
+                                    </h5>
+                                    <a href="" class="btn btn-xs btn-full btn-primary"><i
+                                            class="bi bi-basket2-fill me-2"></i> Restock</a>
                                 </div>
-
+                                <!-- end item produk -->
 
                             </div>
+                            <!-- pagination -->
+                            <div class="d-flex justify-content-center mt-4">
+                                <nav aria-label="pagination-demo">
+                                    <ul class="pagination px-3">
+                                        <li class="page-item">
+                                            <a class="page-link rounded-xs color-black bg-transparent bg-theme border-0"
+                                                href="#" tabindex="-1" aria-disabled="true"><i
+                                                    class="bi bi-chevron-left"></i></a>
+                                        </li>
+                                        <li class="page-item"><a
+                                                class="page-link rounded-xs color-black bg-theme border-0"
+                                                href="#">1</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link rounded-xs color-black bg-theme border-0"
+                                                href="#">2</a></li>
+                                        <li class="page-item active"><a
+                                                class="page-link rounded-xs bg-highlight border-0" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link rounded-xs color-black bg-transparent bg-theme border-0"
+                                                href="#"><i class="bi bi-chevron-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- end pagination -->
                         </div>
                         <!-- end Produk -->
                         <!-- Ulasan -->
@@ -367,6 +427,32 @@
 
                                 </div>
                             </div>
+                            <!-- pagination -->
+                            <div class="d-flex justify-content-center mt-4">
+                                <nav aria-label="pagination-demo">
+                                    <ul class="pagination px-3">
+                                        <li class="page-item">
+                                            <a class="page-link rounded-xs color-black bg-transparent bg-theme border-0"
+                                                href="#" tabindex="-1" aria-disabled="true"><i
+                                                    class="bi bi-chevron-left"></i></a>
+                                        </li>
+                                        <li class="page-item"><a
+                                                class="page-link rounded-xs color-black bg-theme border-0"
+                                                href="#">1</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link rounded-xs color-black bg-theme border-0"
+                                                href="#">2</a></li>
+                                        <li class="page-item active"><a
+                                                class="page-link rounded-xs bg-highlight border-0" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link rounded-xs color-black bg-transparent bg-theme border-0"
+                                                href="#"><i class="bi bi-chevron-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- end pagination -->
                         </div>
                         <!-- end Ulasan -->
                         <!-- Reseller -->
@@ -399,6 +485,7 @@
                                     </span>
 
                                 </div>
+                                <!-- pagination -->
                                 <div class="d-flex justify-content-center mt-4">
                                     <nav aria-label="pagination-demo">
                                         <ul class="pagination px-3">
@@ -423,6 +510,7 @@
                                         </ul>
                                     </nav>
                                 </div>
+                                <!-- end pagination -->
                             </div>
                         </div>
                         <!-- end Reseller -->

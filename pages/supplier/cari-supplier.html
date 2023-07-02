@@ -128,40 +128,65 @@
 
                     <!-- query, tampilkan 3 produk dengan stok terbanyak dari supplier ini
                     bar menunjukkan sisa produk dari 250pcs (100%) -->
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="http://127.0.0.1:3000/images/pictures/6t.png" class="img-fluid rounded-xxs mb-1"
+                    <div class="row mt-3">
+                        <!-- item produk -->
+                        <div class="col bg-light p-2 m-1 rounded-s">
+                            <img src="http://127.0.0.1:3000/images/pictures/6t.png" class="img-fluid rounded-xs mb-1"
                                 alt="img">
-                            <h5 class="text-primary mb-1 font-500">Rp8.000 </h5>
+                            <h5 class="color-dark mb-1 font-14 font-400">User sebagai supplier atau langganan ...
+                            </h5>
+                            <!-- harga yang ditampilkan berubah mengikuti harga user saat ini -->
+                            <h5 class="text-dark mb-1 font-600">Rp8.000 </h5>
+                            <!-- <h5 class="text-dark mb-1 font-600">Rp10.000 </h5> harga jika user adalah reseller biasa -->
 
                             <div class="progress rounded-s" style="height:4px">
                                 <div class="progress-bar gradient-red" role="progressbar" style="width: 35%"
                                     aria-valuenow="35" aria-valuemin="0" aria-valuemax="1000"></div>
                             </div>
-                            <p class="font-12">38 pcs</p>
+                            <p class="font-12 mb-0">Stok 381 | Terjual 431</p>
+                            <i class="font-13 color-yellow-dark bi bi-star-fill"></i>
+                            <strong class="color-dark font-12 opacity-30 ps-1">5.0 | 34 Ulasan</strong>
+                            <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Harga Jual :
+                                <!-- harga jual ditetapkan supplier dan tidak akan berubah mengikuti status user -->
+                                <strong>Rp14.000</strong>
+                            </h5>
+                            <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Keuntungan : <strong
+                                    class="text-success">Rp6.000</strong>
+                            </h5>
+                            <!-- <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Keuntungan : <strong
+                                    class="text-success">Rp4.000</strong>
+                            </h5> keuntungan jika user menjadi reseller biasa -->
                         </div>
-                        <div class="col-4">
-                            <img src="http://127.0.0.1:3000/images/pictures/7t.png" class="img-fluid rounded-xxs mb-1"
+                        <!-- end item produk -->
+                        <!-- item produk -->
+                        <div class="col bg-light p-2 m-1 rounded-s">
+                            <img src="http://127.0.0.1:3000/images/pictures/7t.png" class="img-fluid rounded-xs mb-1"
                                 alt="img">
-                            <h5 class="text-primary mb-1 font-500">Rp8.000 </h5>
+                            <h5 class="color-dark mb-1 font-14 font-400">jika user sebagai reseller biasa ...
+                            </h5>
+                            <!-- harga yang ditampilkan berubah mengikuti harga user saat ini -->
+                            <h5 class="text-dark mb-1 font-600">Rp10.000 </h5>
+                            <!-- <h5 class="text-dark mb-1 font-600">Rp10.000 </h5> harga jika user adalah reseller biasa -->
 
                             <div class="progress rounded-s" style="height:4px">
-                                <div class="progress-bar gradient-red" role="progressbar" style="width: 65%"
+                                <div class="progress-bar gradient-red" role="progressbar" style="width: 35%"
                                     aria-valuenow="35" aria-valuemin="0" aria-valuemax="1000"></div>
                             </div>
-                            <p class="font-12">60 pcs</p>
+                            <p class="font-12 mb-0">Stok 381 | Terjual 431</p>
+                            <i class="font-13 color-yellow-dark bi bi-star-fill"></i>
+                            <strong class="color-dark font-12 opacity-30 ps-1">5.0 | 34 Ulasan</strong>
+                            <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Harga Jual :
+                                <!-- harga jual ditetapkan supplier dan tidak akan berubah mengikuti status user -->
+                                <strong>Rp14.000</strong>
+                            </h5>
+                            <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Keuntungan : <strong
+                                    class="text-success">Rp4.000</strong>
+                            </h5>
+                            <!-- <h5 class="text-dark mb-1 font-12 font-400 opacity-80">Keuntungan : <strong
+                                    class="text-success">Rp4.000</strong>
+                            </h5> keuntungan jika user menjadi reseller biasa -->
                         </div>
-                        <div class="col-4">
-                            <img src="http://127.0.0.1:3000/images/pictures/8t.png" class="img-fluid rounded-xxs mb-1"
-                                alt="img">
-                            <h5 class="text-primary mb-1 font-500">Rp8.000 </h5>
-
-                            <div class="progress rounded-s" style="height:4px">
-                                <div class="progress-bar gradient-red" role="progressbar" style="width: 5%"
-                                    aria-valuenow="35" aria-valuemin="0" aria-valuemax="1000"></div>
-                            </div>
-                            <p class="font-12">78 pcs</p>
-                        </div>
+                        <!-- end item produk -->
                     </div>
                     <div class="divider my-2"></div>
                     <h6 class="font-14 font-400 mb-2"><i class="bi bi-geo-alt-fill me-2 color-red-dark"></i>Salatiga
