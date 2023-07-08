@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>Duo Mobile PWA Kit</title>
+    <!-- <link rel="stylesheet" type="text/css" href="http://127.0.0.1:3000/styles/bootstrap.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:3000/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="manifest" href="http://127.0.0.1:3000/_manifest.json" />
+    <meta id="theme-check" name="theme-color" content="#FFFFFF" />
+    <link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:3000/app/icons/icon-192x192.png" />
+</head>
+
+<body class="theme-light">
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+
+    <div id="page">
+        <!-- Header -->
+        <iframe src="http://127.0.0.1:3000/pages/header-bar.html"
+            onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+        <!-- Footer Bar -->
+        <iframe src="http://127.0.0.1:3000/pages/footer-bar.html"
+            onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+        <!-- Main Sidebar-->
+        <div id="menu-main" data-menu-active="nav-comps" data-menu-load="http://127.0.0.1:3000/pages/menu-main.html"
+            style="width: 280px" class="offcanvas offcanvas-end offcanvas-attached"></div>
+
+        <!-- Your Page Content Goes Here-->
+
+        <div class="page-content header-clear-large">
+            <h5 class="content">Keranjang</h5>
+            <div class="card card-style mb-3">
+                <div class="content">
+                    <div class="d-flex">
+                        <div class="col">
+                            <h5 class="font-400 mb-0"><i class="bi bi-shop-window pe-2 text-primary"></i>Dian Shop</h5>
+                            <h5 class="font-400 font-13 opacity-50"><i class="bi bi-geo-alt-fill pe-2"></i>Salatiga</h5>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex justify-content-end">
+                                <a href=""
+                                    class="btn btn-xs btn-light border-light-subtle py-1 px-3 shadow-0 text-success text-capitalize font-400"><i
+                                        class="bi bi-whatsapp me-1"></i> Chat Supplier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider mb-2"></div>
+                    <!-- keranjang produk -->
+                    <div class="d-flex border-bottom py-2">
+                        <div class="float-start">
+                            <img src="http://127.0.0.1:3000/images/pictures/6t.png" alt="" width="70px"
+                                class="rounded-xs me-3">
+                        </div>
+                        <div class="col">
+                            <h5 class="font-15 font-400">Lorem ipsum dolor teturipsum dolor tetur adipi...
+                            </h5>
+                            <h4 class="font-500">Rp10.000</h4>
+                            <div class="d-flex">
+                                <span class="color-gray-dark align-self-center font-12">min. restock : 20</span>
+                                <a href="" class="font-18 align-self-center ms-auto me-3"><i
+                                        class="bi bi-trash-fill color-gray-dark"></i></a>
+                                <div class="stepper rounded-l border-0">
+                                    <a href="#" class="stepper-sub float-start border-0"><i
+                                            class="bi bi-dash-circle font-20 color-gray-dark"></i></a>
+                                    <input type="number" class="color-theme" min="1" max="99" value="1">
+                                    <a href="#" class="stepper-add float-end border-0"><i
+                                            class="bi bi-plus-circle-fill font-20"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end keranjang produk -->
+                    <!-- keranjang produk -->
+                    <div class="d-flex border-bottom py-2">
+                        <div class="float-start">
+                            <img src="http://127.0.0.1:3000/images/pictures/6t.png" alt="" width="70px"
+                                class="rounded-xs me-3">
+                        </div>
+                        <div class="col">
+                            <h5 class="font-15 font-400">Lorem ipsum dolor teturipsum dolor tetur adipi...
+                            </h5>
+                            <h4 class="font-500">Rp10.000</h4>
+                            <div class="d-flex">
+                                <span class="color-gray-dark align-self-center font-12">min. restock : 20</span>
+                                <a href="" class="font-18 align-self-center ms-auto me-3"><i
+                                        class="bi bi-trash-fill color-gray-dark"></i></a>
+                                <div class="stepper rounded-l border-0">
+                                    <a href="#" class="stepper-sub float-start border-0"><i
+                                            class="bi bi-dash-circle font-20 color-gray-dark"></i></a>
+                                    <input type="number" class="color-theme" min="1" max="99" value="1">
+                                    <a href="#" class="stepper-add float-end border-0"><i
+                                            class="bi bi-plus-circle-fill font-20"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end keranjang produk -->
+                    <!-- keranjang produk -->
+                    <div class="d-flex border-bottom py-2">
+                        <div class="float-start">
+                            <img src="http://127.0.0.1:3000/images/pictures/6t.png" alt="" width="70px"
+                                class="rounded-xs me-3">
+                        </div>
+                        <div class="col">
+                            <h5 class="font-15 font-400">Lorem ipsum dolor teturipsum dolor tetur adipi...
+                            </h5>
+                            <h4 class="font-500">Rp10.000</h4>
+                            <div class="d-flex">
+                                <span class="color-gray-dark align-self-center font-12">min. restock : 20</span>
+                                <a href="" class="font-18 align-self-center ms-auto me-3"><i
+                                        class="bi bi-trash-fill color-gray-dark"></i></a>
+                                <div class="stepper rounded-l border-0">
+                                    <a href="#" class="stepper-sub float-start border-0"><i
+                                            class="bi bi-dash-circle font-20 color-gray-dark"></i></a>
+                                    <input type="number" class="color-theme" min="1" max="99" value="1">
+                                    <a href="#" class="stepper-add float-end border-0"><i
+                                            class="bi bi-plus-circle-fill font-20"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end keranjang produk -->
+                    <h5 class="font-500 mt-3"> Rincian Pembelian :</h5>
+                    <h6 class="font-400 font-12">Total Harga : <strong class="float-end">Rp200.000</strong></h6>
+                    <h6 class="font-400 font-12">Jumlah Pembelian : <strong class="float-end">30</strong></h6>
+                    <div class="divider my-2"></div>
+                    <a href="" class="btn btn-full shadow-0 btn-primary text-capitalize">Bayar</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End of Page Content-->
+    </div>
+    <!--End of Page ID-->
+
+    <script src="http://127.0.0.1:3000/scripts/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:3000/scripts/custom.js"></script>
+</body>
+
+</html>
